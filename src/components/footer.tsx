@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Footer() {
@@ -12,18 +12,6 @@ export function Footer() {
               Baked with Millets. Made with Love. <br />
               Bringing wholesome, ancient grains back to the modern bakery.
             </p>
-            <div className="flex gap-4">
-              <Button variant="ghost" size="icon" className="rounded-full bg-secondary-foreground/10 hover:bg-secondary-foreground/20 text-secondary-foreground border-none">
-                <a href="https://www.facebook.com/p/Chefs-Choice-61553798969671/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                  <Facebook className="w-5 h-5" />
-                </a>
-              </Button>
-              <Button variant="ghost" size="icon" className="rounded-full bg-secondary-foreground/10 hover:bg-secondary-foreground/20 text-secondary-foreground border-none">
-                <a href="https://www.instagram.com/chefschoice.cafe/reels" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                  <Instagram className="w-5 h-5" />
-                </a>
-              </Button>
-            </div>
           </div>
 
           <div>
@@ -41,7 +29,9 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-secondary-foreground/70">
                 <Phone className="w-5 h-5" />
-                <a href="tel:+918093556846" className="hover:text-primary transition-colors">+91 80935 56846</a>
+                <a href="tel:+918093556846" className="hover:text-primary transition-colors">
+                  +91 80935 56846
+                </a>
               </li>
               <li>
                 <Button className="mt-4 bg-primary text-primary-foreground hover:bg-primary/90 rounded-full w-full" asChild>
